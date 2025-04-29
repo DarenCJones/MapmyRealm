@@ -6,7 +6,7 @@
   ],
   "compilerOptions": {
     "moduleResolution": "bundler",  // or "node"
-    "baseUrl": "./src",
+    "baseUrl": "../",
     "paths": {
       "assets/*": ["./src/assets/*"],
       "routes/*": ["./src/routes/*"],
