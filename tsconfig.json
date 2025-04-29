@@ -5,7 +5,8 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "baseUrl": "../",
+    "moduleResolution": "bundler",  // or "node"
+    "baseUrl": "./src",
     "paths": {
       "assets/*": ["./src/assets/*"],
       "routes/*": ["./src/routes/*"],
