@@ -1,5 +1,37 @@
 @import "tailwindcss";
+@plugin "daisyui";
+/*
+@layer components {
+  .btn {
+    background-color: var(--color-pink-500);
+    color: var(--color-white);
 
+    @variant hover {
+      background-color: var(--color-pink-800);
+    }
+  }
+
+  a {
+    color: var(--color-pink-500);
+
+    @variant hover {
+      color: var(--color-pink-800);
+    }
+  }
+}*/
+
+/*
+@theme {
+  --pink: var(--color-pink-500);
+}
+*/
+
+/*
+text: grey-600
+button-bg: pink-500
+button-text: white;
+links: pink-500
+*/
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,15 +55,15 @@ body {
   min-height: 100vh;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    /*color: #213547;*/
+    /*background-color: #ffffff;*/
   }
 }
 
 .page {
   margin-left: 72px;
-  width: 100vw;
-  height: 100vh;
+  width: calc(100vw-72px);
+  height: calc(100vh-24px);
 }
