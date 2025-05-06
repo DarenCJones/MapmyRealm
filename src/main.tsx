@@ -11,6 +11,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <div className="page">
         <Routes />
+        <div>this main page is loading. Is routes?</div>
       </div>
       <Sidebar />
       <Footer />
