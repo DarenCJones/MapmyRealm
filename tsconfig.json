@@ -6,6 +6,7 @@
   ],
   "compilerOptions": {
     "baseUrl": "./",
+    "moduleResolution": "node",
     "paths": {
       "assets/*": ["./src/assets/*"],
       "routes/*": ["./src/routes/*"],
