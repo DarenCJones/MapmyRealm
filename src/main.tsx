@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import Routes from "./Routes";
-import Sidebar from "components/Sidebar";
+import Navbar from "components/Navbar";
 import Footer from "components/Footer";
 import { BrowserRouter } from "react-router";
 import { Theme } from '@radix-ui/themes';
@@ -14,18 +14,16 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <ThemeProvider
         attribute='class'
-        defaultTheme='light'
+        defaultTheme='dark'
         enableSystem
       >
         <Theme
           panelBackground='solid'
-          grayColor='sand'
-          accentColor='red'
+          grayColor='gray'
+          accentColor='teal'
         >
-          <div className="page">
-            <Routes />
-          </div>
-          <Sidebar />
+          <Navbar />
+          <Routes />
           <Footer />
         </Theme>
       </ThemeProvider>
