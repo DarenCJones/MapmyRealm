@@ -1,8 +1,10 @@
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import { NavigationMenu } from 'radix-ui'
 import { Flex } from "@radix-ui/themes";
 
 export default function Navbar() {
+  const location = useLocation();
+  
   const defaultLinkClass = `
     p-2
     hover:bg-(--gray-3)
@@ -36,7 +38,7 @@ export default function Navbar() {
               About
             </NavigationMenu.Item>
           </NavLink>
-          <NavLink to='/contact' className={location.pathname === '/content' ? activeLinkClass : defaultLinkClass}>
+          <NavLink to='/contact' className={location.pathname === '/contact' ? activeLinkClass : defaultLinkClass}>
             <NavigationMenu.Item>
               Contact
             </NavigationMenu.Item>

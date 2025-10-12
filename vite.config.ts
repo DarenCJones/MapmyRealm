@@ -6,7 +6,7 @@ import { resolve } from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/MapmyRealm/",
+  base: "/",
   resolve: {
     alias: {
       assets: resolve(__dirname, "./src/assets"),
