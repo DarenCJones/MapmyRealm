@@ -3,7 +3,7 @@ import LinkedIn from "assets/LinkedIn.svg";
 
 export default function Footer() {
   return (
-    <div className="fixed w-screen bottom-0 h-6 flex flex-row justify-center space-x-6 bg-black text-grey-400">
+    <div className="fixed w-screen bottom-0 h-[var(--FooterHeight)] flex flex-row justify-center space-x-6 bg-black text-(--gray-a11)">
       <span>
         <Link to="/">Mapmyrealm.com</Link>
         <span>{" by Daren Jones is licensed under "}</span>
